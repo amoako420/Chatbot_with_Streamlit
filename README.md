@@ -12,8 +12,8 @@ This is a chatbot application built using Streamlit and the Gemini 2.0 Flash mod
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/amoako420/Chatbot_with_Streamlit.git
+    cd https://github.com/amoako420/Chatbot_with_Streamlit.git
     ```
 
 2. Install the required dependencies:
