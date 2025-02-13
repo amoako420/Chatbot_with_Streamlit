@@ -39,7 +39,7 @@ if prompt := st.chat_input("Enter your message"):
         st.markdown(prompt)
     
     # Generate a response from the model
-    with st.spinner("Thinking..."):
+    with st.spinner("Gemini is thinking..."):
         response = generate_text(prompt)
     
     # Add model response to chat history
