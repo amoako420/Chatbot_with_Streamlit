@@ -50,4 +50,4 @@ if prompt := st.chat_input("Enter your message"):
         with st.chat_message("assistant"):
             st.markdown(response)
     else:
-        st.warning("No response received from the model.")
+        st.warning("No response received from the model. Try again.")
