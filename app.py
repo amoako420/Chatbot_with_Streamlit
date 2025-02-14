@@ -7,7 +7,7 @@ api_key = api_key()
 client = genai.Client(api_key=api_key)
 
 # Set up the Streamlit app
-st.title("Gemini 2.0 Flash Chatbot")
+st.title("Gemini 2.0 Flash")
 
 # Initialize session state to store chat history
 if "messages" not in st.session_state:
