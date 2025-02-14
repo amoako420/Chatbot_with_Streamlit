@@ -51,3 +51,7 @@ if prompt := st.chat_input("Enter your message"):
             st.markdown(response)
     else:
         st.warning("No response received from the model. Try again.")
+        
+        
+
+st.write("Made by Amoako")
