@@ -1,6 +1,6 @@
 import streamlit as st
 from env import api_key
-from google import genai  # Assuming this is the correct import for your Gemini client
+from google import genai 
 
 # Initialize the Gemini client
 api_key = api_key()
@@ -17,7 +17,7 @@ if "messages" not in st.session_state:
 def generate_text(prompt):
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash", contents=prompt
+            model="gemini-2.0-flash-lite", contents=prompt
         )
         return response.text
     except Exception as e:
