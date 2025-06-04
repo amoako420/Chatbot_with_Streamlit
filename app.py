@@ -1,10 +1,13 @@
 import streamlit as st
 
 from google import genai 
+from dotenv import load_dotenv
+import os
 
 # Initialize the Gemini client
 
-client = genai.Client(api_key=)
+load_dotenv()  # Load environment variables from .env file
+client = genai.Client(api_key=os.getenv('API_KEY'))
 
 # Set up the Streamlit app
 st.title("Gemini 2.0 Flash")
