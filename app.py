@@ -1,10 +1,10 @@
 import streamlit as st
-from env import api_key
+
 from google import genai 
 
 # Initialize the Gemini client
-api_key = api_key()
-client = genai.Client(api_key=api_key)
+
+client = genai.Client(api_key=)
 
 # Set up the Streamlit app
 st.title("Gemini 2.0 Flash")
@@ -17,7 +17,7 @@ if "messages" not in st.session_state:
 def generate_text(prompt):
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash-lite", contents=prompt
+            model="gemini-2.5-flash-preview-05-20", contents=prompt
         )
         return response.text
     except Exception as e:
@@ -54,4 +54,4 @@ if prompt := st.chat_input("Enter your message"):
         
         
 
-st.write("Made by Amoako")
+#st.write("Made by Amoako")
